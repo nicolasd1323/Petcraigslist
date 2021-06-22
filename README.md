@@ -2,13 +2,13 @@
 
 ## Overview
 
-_**Paws For Life** is an application where users can put pets up for adoption and can also see what pets are avalable to be adopted. Users can see pictures and detail information about each pet. Users are allowed to comment and leave info to be contacted._
+_**Paws For Life** is an application where users can put pets up for adoption and can also see what pets are avalable to be adopted. Users can see pictures and detail information about each pet. Users are allowed to comment and leave sellers their info to be contacted._
 
 
 <br>
 ## MVP
 
-_The **Paws For Life** MVP is to have a full Stack application using a back-end in Ruby on Rails and a fully fisnish front end using react. Demostrating understanding in CSS using grid and/or flexbox to have a stablish brand for this application. 
+_The **Paws For Life** MVP is to have a full Stack application using a back-end in Ruby on Rails and a fully finished front end using react. Understanding in CSS will be demonstrated by using grid and/or flexbox to have an establishede brand for this application. 
 _
 
 <br>
@@ -103,7 +103,7 @@ Screen Shot 2021-06-21 at 8.58.02 PM![Screen Shot 2021-06-21 at 8 58 02 PM](http
 
 #### Time Estimates
 
-> Use this section to estimate the time necessary to build out each of the components you've described above.
+>This is the timeline for this application.
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
@@ -120,7 +120,7 @@ Screen Shot 2021-06-21 at 8.58.02 PM![Screen Shot 2021-06-21 at 8 58 02 PM](http
 |Create and Detail Pag|    H     |     4 hrs      |      TBD      |     TBD     |
 |  CSS Styling        |    H     |     8 hrs      |      TBD      |     TBD     |
 | DEPLOYMENT Frontend |    H     |     1 hrs      |      TBD      |     TBD     |
-| TOTAL               |          |     39 hrs     |     3 hrs     |     TBD     |
+|     TOTAL           |          |     39 hrs     |     3 hrs     |     TBD     |
 
 <br>
 
