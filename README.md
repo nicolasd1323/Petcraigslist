@@ -135,15 +135,15 @@ Screen Shot 2021-06-21 at 9.02.00 PM![Screen Shot 2021-06-21 at 9 02 00 PM](http
 ## Post-MVP
 
 > Allow users to give ratings to the sellers.
-> Allow users to give rating to 
+> Allow users to like the image of the pet and have the pets render in the PetsPage according to who has more likes.
 
 ***
 
 ## Code Showcase
 
-> Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
+> 
 
 ## Code Issues & Resolutions
 
-> Use this section to list of all major issues encountered and their resolution.
+> 
 
