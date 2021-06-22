@@ -20,9 +20,9 @@ puts "#{User.count} users created"
 
 
 @pet = Pet.create!(name: 'Paco', image: 'https://images.unsplash.com/photo-1618760439335-0fe149f356ce?ixid=MnwxMjA3fDB8MHxzZWFy[…]fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60', description: 'super friendly', age: 1,  user: @user)
-@pet1 = Pet.create!(name: 'Amber', image: 'https://images.unsplash.com/photo-1610726264625-575c36573342?ixid=MnwxMjA3fDB8MHxzZWFy[…]ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60', description: 'super friendly', age: 5,  user: @user)
-@pet2 = Pet.create!(name: 'Chili', image: 'https://images.unsplash.com/photo-1610112645245-36020fc0e128?ixid=MnwxMjA3fDB8MHxzZWFy[…]fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60', description: 'super friendly', age: 1,  user: @user2)
-@pet3 = Pet.create!(name: 'Rocco', image: 'https://images.unsplash.com/photo-1562714476-2e539d767a5e?ixid=MnwxMjA3fDB8MHxzZWFyY2h[…]wwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60', description: 'super friendly', age: 3,  user: @user2)
+@pet1 = Pet.create!(name: 'Amber', image: 'https://images.unsplash.com/photo-1610726264625-575c36573342?ixid=MnwxMjA3fDB8MHxzZWFy[…]ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60', description: 'Loves to snuggle', age: 5,  user: @user)
+@pet2 = Pet.create!(name: 'Chili', image: 'https://images.unsplash.com/photo-1610112645245-36020fc0e128?ixid=MnwxMjA3fDB8MHxzZWFy[…]fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60', description: 'Lazy', age: 1,  user: @user2)
+@pet3 = Pet.create!(name: 'Rocco', image: 'https://images.unsplash.com/photo-1562714476-2e539d767a5e?ixid=MnwxMjA3fDB8MHxzZWFyY2h[…]wwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60', description: 'mister I love to eat', age: 3,  user: @user2)
 
 
 puts "#{Pet.count} pets created"

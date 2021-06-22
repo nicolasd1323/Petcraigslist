@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get '/auth/verify', to: 'authentication#verify'
   get '/pets', to: 'pets#index'
   get '/pets/comments', to: 'comments#index'
+  post '/pet/:id/comments', to: 'comments#create'
 
   # get '/comments', to: 'comments#index'
   resources :users, only: :create
