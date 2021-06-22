@@ -129,7 +129,8 @@ Screen Shot 2021-06-21 at 8.58.02 PM![Screen Shot 2021-06-21 at 8 58 02 PM](http
 #### ERD Model
 https://app.diagrams.net/#G1bi-UjCeFkUbkOcx2s_RBL2U3WYkJ0dWq
 
-Screen Shot 2021-06-21 at 9.02.00 PM![Screen Shot 2021-06-21 at 9 02 00 PM](https://user-images.githubusercontent.com/81534592/122846508-f7aa5600-d2d3-11eb-986c-6369306bee29.png)
+Screen Shot 2021-06-22 at 9.39.44 AM![Screen Shot 2021-06-22 at 9 39 44 AM](https://user-images.githubusercontent.com/81534592/122935003-fd3c8600-d33d-11eb-998c-9796600580bf.png)
+
 ***
 
 ## Post-MVP
