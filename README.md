@@ -15,7 +15,7 @@ _
 ### Goals
 
 - _Have a working, interactive React app._
-- _Consume data from your Ruby on Rails API._
+- _Consume data from Ruby on Rails API._
 - _Demonstrate Full CRUD actions._
 - _Use Flexbox or Grid in my design._
 
