@@ -7,7 +7,8 @@ _**Paws For Life** is an application where users can put pets up for adoption an
 
 <br>
 ## MVP
-_The **Paws For Life** MVP is have a full Stack application using a back-end in Ruby on Rails and a fully fisnish front end using react. Demostrating understanding in CSS suing grid and/or flexbox to have a stablish brand for this application. 
+
+_The **Paws For Life** MVP is to have a full Stack application using a back-end in Ruby on Rails and a fully fisnish front end using react. Demostrating understanding in CSS using grid and/or flexbox to have a stablish brand for this application. 
 _
 
 <br>
@@ -106,9 +107,20 @@ Screen Shot 2021-06-21 at 8.58.02 PM![Screen Shot 2021-06-21 at 8 58 02 PM](http
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
+| Project Approval    |    H     |     2 hrs      |     4 hrs     |     TBD     |
+|Auth for user Backend|    H     |     4 hrs      |      TBD      |     TBD     |
+|  schema, seedData   |    H     |     2 hrs      |      TBD      |     TBD     |
+|      Routes         |    H     |     2 hrs      |      TBD      |     TBD     |
+| Controllers, models |    H     |     4 hrs      |      TBD      |     TBD     |
+| DEPLOYMENT Backend  |    H     |     1 hrs      |      TBD      |     TBD     |
+|Front-end api-config |    H     |     2 hrs      |      TBD      |     TBD     |
+|   Front-end auth    |    H     |     3 hrs      |      TBD      |     TBD     |
+|  Rendering Data     |    H     |     4 hrs      |      TBD      |     TBD     |
+|    Nav, footer      |    H     |     2 hrs      |      TBD      |     TBD     |
+|Create and Detail Pag|    H     |     4 hrs      |      TBD      |     TBD     |
+|  CSS Styling        |    H     |     8 hrs      |      TBD      |     TBD     |
+| DEPLOYMENT Frontend |    H     |     1 hrs      |      TBD      |     TBD     |
+| TOTAL               |          |     39 hrs     |     3 hrs     |     TBD     |
 
 <br>
 
@@ -122,7 +134,8 @@ Screen Shot 2021-06-21 at 9.02.00 PM![Screen Shot 2021-06-21 at 9 02 00 PM](http
 
 ## Post-MVP
 
-> 
+> Allow users to give ratings to the sellers.
+> Allow users to give rating to 
 
 ***
 
