@@ -35,7 +35,7 @@ export default function PetDetail(props) {
       <Link to={`/pets/${pet.id}/edit`}>
 						<button>Edit</button>
 					</Link>
-					<button onClick={() => handleDelete(pet.id)}>Delete</button>
+					<Link to={`/pets`} onClick={() => handleDelete(pet.id)}>Delete</Link>
     </div>
 
   );

@@ -6,7 +6,7 @@ import PetsCreate from '../../screens/PetsCreate';
 import PetDetail from '../../screens/PetDetail';
 import PetEdit from '../../screens/PetEdit';
 
-import { deletePet, getAllPets, postPet, putPet, } from '../../services/pets'
+import { deletePet, getAllPets, postPet, putPet,  } from '../../services/pets'
 
 
 function MainContainer() {
@@ -54,7 +54,7 @@ function MainContainer() {
 					<PetsCreate handleCreate={handleCreate} />
 				</Route>
 				<Route path='/pets/:id'>
-					<PetDetail pets={pets} />
+					<PetDetail pets={pets} handleDelete={handleDelete} />
 				</Route>
 				<Route path='/pets'>
           <Pets pets={pets} />
