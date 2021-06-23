@@ -17,10 +17,6 @@ function Pets(props) {
             
             />
 					</Link>
-					<Link to={`/pets/${pet.id}/edit`}>
-						<button>Edit</button>
-					</Link>
-					<button onClick={() => handleDelete(pet.id)}>Delete</button>
 				</Fragment>
 			))}
 			<br />

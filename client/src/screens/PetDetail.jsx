@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
 import { useParams, useHistory, Link } from "react-router-dom";
-import { getOnePet} from "../services/pets";
+import { getOnePet } from "../services/pets";
 
 export default function PetDetail(props) {
-  
+  const { handleDelete } = props;
+
   const [pet, setPet] = useState(null);
   const [isLoaded, setLoaded] = useState(false);
   const { id } = useParams();
@@ -31,6 +32,10 @@ export default function PetDetail(props) {
       <h1>{pet.name}</h1>
       <h6>Details: {pet.description}</h6>
       <h6>Age:{pet.age}</h6>
+      <Link to={`/pets/${pet.id}/edit`}>
+						<button>Edit</button>
+					</Link>
+					<button onClick={() => handleDelete(pet.id)}>Delete</button>
     </div>
 
   );
