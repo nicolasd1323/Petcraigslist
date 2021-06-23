@@ -2,8 +2,10 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { Switch, Route, useHistory } from 'react-router-dom';
 import Pets from '../../screens/Pets'
-import PetCreate from '../../screens/PetsCreate'
-import { deletePet, getAllPets, postPet, putPet } from '../../services/pets'
+import PetsCreate from '../../screens/PetsCreate'
+import PetDetail from '../../screens/PetDetail'
+
+import { deletePet, getAllPets, postPet, putPet, } from '../../services/pets'
 
 
 function MainContainer() {
@@ -17,8 +19,10 @@ function MainContainer() {
 			setPets(petList);
 		};
 		fetchPets();
-	}, []);
+  }, []);
+  
 
+  
 	const handleCreate = async (formData) => {
 		const petItem = await postPet(formData);
 		setPets((prevState) => [...prevState, petItem]);
@@ -45,11 +49,11 @@ function MainContainer() {
 				{/* <Route path='/pets/:id/edit'>
 					<PetEdit pets={pets} handleUpdate={handleUpdate} />
 				</Route> */}
-				{/* <Route path='/pets/:id'>
-					<PetDetail pets={pets} />
-				</Route> */}
 				<Route path='/pets/new'>
-					<PetCreate handleCreate={handleCreate} />
+					<PetsCreate handleCreate={handleCreate} />
+				</Route>
+				<Route path='/pets/:id'>
+					<PetDetail pets={pets} />
 				</Route>
 				<Route path='/pets'>
           <Pets pets={pets} />
