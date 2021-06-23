@@ -8,7 +8,8 @@ function Pets(props) {
 			<h3>Pets for Adoption</h3>
 			{pets.map((pet) => (
 				<Fragment key={pet.id}>
-					<Link to={`/pets/${pet.id}`}>
+          <Link to={`/pets/${pet.id}`}>
+          {pet.name}
             <img
               className="pet-images"
               src={pet.image}

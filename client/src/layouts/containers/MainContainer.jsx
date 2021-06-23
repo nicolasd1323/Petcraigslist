@@ -2,6 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { Switch, Route, useHistory } from 'react-router-dom';
 import Pets from '../../screens/Pets'
+import PetCreate from '../../screens/PetsCreate'
 import { deletePet, getAllPets, postPet, putPet } from '../../services/pets'
 
 
@@ -47,12 +48,12 @@ function MainContainer() {
 				{/* <Route path='/pets/:id'>
 					<PetDetail pets={pets} />
 				</Route> */}
-				{/* <Route path='/pets/new'>
+				<Route path='/pets/new'>
 					<PetCreate handleCreate={handleCreate} />
-				</Route> */}
-				<Route path='/pets'>
-					<Pets pets={pets} handleDelete={handleDelete} />
 				</Route>
+				<Route path='/pets'>
+          <Pets pets={pets} />
+        </Route>
 			</Switch>
     </div>
   );

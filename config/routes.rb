@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   post '/pets/:pet_id/comments/:id', to: 'pets#add_comment'
   get '/pets/comments', to: 'comments#index'
   post '/pet/:pet_id/comments', to: 'comments#create'
-
+  post '/pets/new', to: 'pets#create'
   # get '/comments', to: 'comments#index'
   resources :users, only: :create
   resources :pets do 

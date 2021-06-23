@@ -1,5 +1,6 @@
 class PetsController < ApplicationController
   before_action :set_pet, only: [:show, :update, :destroy]
+  before_action :authorize_request, only: [:create, :update, :destroy]
 
   # GET /pets
   def index
@@ -16,9 +17,10 @@ class PetsController < ApplicationController
   # POST /pets
   def create
     @pet = Pet.new(pet_params)
+    @pet.user = @current_user
 
     if @pet.save
-      render json: @pet, status: :created, location: @pet
+      render json: @pet, status: :created
     else
       render json: @pet.errors, status: :unprocessable_entity
     end
@@ -57,6 +59,6 @@ class PetsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def pet_params
-      params.require(:pet).permit(:name, :image, :description, :age, :user_id)
+      params.require(:pet).permit(:name, :image, :description, :age)
     end
 end
