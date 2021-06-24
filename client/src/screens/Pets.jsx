@@ -1,11 +1,18 @@
 import { Fragment } from 'react';
 import { Link } from 'react-router-dom';
+import './pet.css'
+
 
 function Pets(props) {
   const { pets } = props;
 	return (
-		<div>
-			<h3>Pets for Adoption</h3>
+    <div className='allPets'>
+    <div className='create'>
+      <Link to='/pets/new'>
+				<button>Add Pet for adoption</button>
+        </Link>
+        </div>
+      <br />
 			{pets.map((pet) => (
 				<Fragment key={pet.id}>
           <Link to={`/pets/${pet.id}`}>
@@ -19,10 +26,8 @@ function Pets(props) {
 					</Link>
 				</Fragment>
 			))}
-			<br />
-			<Link to='/pets/new'>
-				<button>Create</button>
-			</Link>
+		
+		
 		</div>
 	);
 }

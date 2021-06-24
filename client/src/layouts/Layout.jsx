@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 export default function Layout(props) {
 	const { currentUser, handleLogout, children } = props;
 	return (
-		<div>
+		<div className='layout'>
 			<header>
 				<h1>Paws For Life</h1>
 				{currentUser ? (
@@ -18,7 +18,7 @@ export default function Layout(props) {
         {
           currentUser && 
           <>
-            <Link to='/pets'>Pets</Link>
+            <Link to='/pets'>Pets For Adoption</Link>
           </>
         }
 			</header>

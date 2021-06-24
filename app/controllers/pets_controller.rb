@@ -11,7 +11,7 @@ class PetsController < ApplicationController
 
   # GET /pets/1
   def show
-    render json: @pet
+    render json: @pet, include: :comments
   end
 
   # POST /pets
@@ -36,16 +36,16 @@ class PetsController < ApplicationController
   end
 
    # PUT /comments/1/pets/1
-  #  def add_comment
-  #   @comment = Comment.find(params[:comment_id])
-  #   # @food = Food.find(params[:id])
+   def add_comment
+    @comment = Comment.find(params[:comment_id])
 
-  #   @comment.pets << @pet
-  #   # @comment.pets.push(@pet)
-  #   # ==== OR ====
-  #   # @pet.comments << @comment
-  #   render json: @pet, include: :comments
-  #   end
+
+    @comment.pets << @pet
+    # @comment.pets.push(@pet)
+    # ==== OR ====
+    # @pet.comments << @comment
+    render json: @pet, include: :comments
+    end
   # DELETE /pets/1
   def destroy
     @pet.destroy

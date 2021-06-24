@@ -25,7 +25,3 @@ export const deletePet = async (id) => {
 	return resp;
 };
 
-export const addComment = async (petId, commentId) => {
-	const resp = await api.put(`/comments/${commentId}/pets/${petId}`);
-	return resp.data;
-};

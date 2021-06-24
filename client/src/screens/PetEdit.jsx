@@ -1,7 +1,13 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import './pet.css'
+import { getOnePet } from "../services/pets";
+
 
 function PetEdit(props) {
+  const [pet, setPet] = useState({});
+  const [isLoaded, setLoaded] = useState(false);
+
   const [formData, setFormData] = useState({
     name: '',
     description: '',
@@ -10,7 +16,16 @@ function PetEdit(props) {
   });
   const { name, description, age, image } = formData;
 	const { pets, handleUpdate } = props;
-	const { id } = useParams();
+  const { id } = useParams();
+  useEffect(() => {
+    const fetchPet = async () => {
+      const pet = await getOnePet(id);
+      setPet(pet);
+      setLoaded(true);
+    };
+    fetchPet();
+  }, [id]);
+ 
   
   useEffect(() => {
 		const preFillFormData = () => {
@@ -36,8 +51,9 @@ function PetEdit(props) {
 	};
 
   return (
-    <div>
-      <form
+    <div className='editPet'>
+      <img className="pet-edit-image" src={pet.image} alt={pet.name} />
+      <form className='formEdit'
 			onSubmit={(e) => {
 				e.preventDefault();
 				handleUpdate(id, formData);
