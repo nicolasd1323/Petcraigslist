@@ -1,13 +1,16 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, Fragment } from "react";
 import { useParams, useHistory, Link } from "react-router-dom";
-import { getOnePet } from "../services/pets";
+import { addComment, getOnePet } from "../services/pets";
 
 export default function PetDetail(props) {
-  const { handleDelete } = props;
+  const { handleDelete, comments } = props;
 
-  const [pet, setPet] = useState(null);
+
+  const [pet, setPet] = useState({});
+  const [comment, setComment] = useState([]);
   const [isLoaded, setLoaded] = useState(false);
   const { id } = useParams();
+
 
   useEffect(() => {
     const fetchPet = async () => {
@@ -17,9 +20,25 @@ export default function PetDetail(props) {
     };
     fetchPet();
   }, [id]);
+ 
+
+  useEffect(() => {
+    
+    const getComments = () => {
+    
+      const currComments = comments && comments.filter((message) => {
+        return message.pet_id === pet.id
+      })
+     setComment(currComments)
+      
+    };
+    getComments()
+  }, [pet]);
   if (!isLoaded) {
     return <h1>Loading...</h1>;
   }
+
+  
 
   return (
   
@@ -36,6 +55,14 @@ export default function PetDetail(props) {
 						<button>Edit</button>
 					</Link>
 					<Link to={`/pets`} onClick={() => handleDelete(pet.id)}>Delete</Link>
+    
+    
+		
+          <h3>Comments</h3>
+			{comment && comment.map((comment) => (
+				<p key={comment.id}>{comment.content}</p>
+			))}
+    
     </div>
 
   );

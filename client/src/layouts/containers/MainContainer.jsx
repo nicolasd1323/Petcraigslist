@@ -7,10 +7,11 @@ import PetDetail from '../../screens/PetDetail';
 import PetEdit from '../../screens/PetEdit';
 
 import { deletePet, getAllPets, postPet, putPet,  } from '../../services/pets'
-
+import { getAllComments} from '../../services/comments'
 
 function MainContainer() {
   const [pets, setPets] = useState([]);
+  const [comments, setComments]= useState([])
   const history = useHistory();
   
 
@@ -21,6 +22,15 @@ function MainContainer() {
 		};
 		fetchPets();
   }, []);
+  
+  useEffect(() => {
+		const fetchComments = async () => {
+			const commentList = await getAllComments();
+			setComments(commentList);
+		};
+		fetchComments();
+  }, []);
+  
   
 
   
@@ -54,7 +64,7 @@ function MainContainer() {
 					<PetsCreate handleCreate={handleCreate} />
 				</Route>
 				<Route path='/pets/:id'>
-					<PetDetail pets={pets} handleDelete={handleDelete} />
+          <PetDetail pets={pets} comments={comments} handleDelete={handleDelete} />
 				</Route>
 				<Route path='/pets'>
           <Pets pets={pets} />

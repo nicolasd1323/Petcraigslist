@@ -2,7 +2,7 @@ import { Fragment } from 'react';
 import { Link } from 'react-router-dom';
 
 function Pets(props) {
-  const { pets, handleDelete } = props;
+  const { pets } = props;
 	return (
 		<div>
 			<h3>Pets for Adoption</h3>
