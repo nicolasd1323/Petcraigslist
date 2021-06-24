@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
-import { getOnePet } from "../services/pets";
+import { getOnePet } from "../../services/pets";
 
 export default function PetDetail(props) {
   const { handleDelete, handleCreateComment } = props;

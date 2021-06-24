@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import './Register.css'
 
 export default function Register(props) {
   const [formData, setFormData] = useState({
@@ -18,7 +19,8 @@ export default function Register(props) {
 	};
 
   return (
-    <form
+    <div className='register-page'>
+    <form className='form-register'
 			onSubmit={(e) => {
 				e.preventDefault();
 				handleRegister(formData);
@@ -55,7 +57,8 @@ export default function Register(props) {
 				/>
 			</label>
 			<br />
-			<button>Submit</button>
-		</form>
+			<button className='button'>Submit</button>
+      </form>
+      </div>
   )
 }

@@ -1,5 +1,6 @@
 import { Fragment } from 'react';
 import { Link } from 'react-router-dom';
+import Footer from '../../others/Footer'
 import './pet.css'
 
 
@@ -13,6 +14,7 @@ function Pets(props) {
         </Link>
         </div>
       <br />
+			<h3>Pets for Adoption</h3>
 			{pets.map((pet) => (
 				<Fragment key={pet.id}>
           <Link to={`/pets/${pet.id}`}>
@@ -23,11 +25,12 @@ function Pets(props) {
               alt={pet.name}
             
             />
-					</Link>
+          </Link>
 				</Fragment>
 			))}
 		
-		
+      
+      <Footer />
 		</div>
 	);
 }

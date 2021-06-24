@@ -1,10 +1,10 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import { Switch, Route, useHistory } from 'react-router-dom';
-import Pets from '../../screens/Pets';
-import PetsCreate from '../../screens/PetsCreate';
-import PetDetail from '../../screens/PetDetail';
-import PetEdit from '../../screens/PetEdit';
+import Pets from '../../screens/pet/Pets';
+import PetsCreate from '../../screens/petCreate/PetsCreate';
+import PetDetail from '../../screens/petDetail/PetDetail';
+import PetEdit from '../../screens/petEdit/PetEdit';
 
 import { deletePet, getAllPets, postPet, putPet  } from '../../services/pets'
 import { getAllComments, postComment } from '../../services/comments'

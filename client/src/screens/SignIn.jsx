@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import './Register.css'
 
 
 function SignIn(props) {
@@ -18,8 +19,9 @@ function SignIn(props) {
 		}));
 	};
 
-	return (
-		<form
+  return (
+    <div className='register-page'>
+    <form className='form-signIn'
 			onSubmit={(e) => {
 				e.preventDefault();
 				handleLogin(formData);
@@ -48,7 +50,9 @@ function SignIn(props) {
 			<br />
 			<Link to='/register'>Register</Link>
 			<button>Submit</button>
-		</form>
+      </form>
+      </div>
+
 	);
 }
 

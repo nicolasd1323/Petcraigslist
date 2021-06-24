@@ -1,14 +1,16 @@
 import { Link } from 'react-router-dom';
+import './layout.css'
+
 
 export default function Layout(props) {
 	const { currentUser, handleLogout, children } = props;
 	return (
-		<div className='layout'>
-			<header>
+    <div className='layout'>
+      <header className='nav'>
 				<h1>Paws For Life</h1>
 				{currentUser ? (
 					<>
-						<p>{currentUser.username}</p>
+						<p>Welcome, {currentUser.username}</p>
 						<button onClick={handleLogout}>Logout</button>
 					</>
 				) : (
@@ -20,9 +22,13 @@ export default function Layout(props) {
           <>
             <Link to='/pets'>Pets For Adoption</Link>
           </>
-        }
-			</header>
+          }
+      </header>
+      <footer>
+         
+      </footer>
 			{children}
-		</div>
+    </div>
+    
 	);
 }

@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import './pet.css'
-import { getOnePet } from "../services/pets";
+import { getOnePet } from "../../services/pets";
 
 
 function PetEdit(props) {

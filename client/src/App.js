@@ -2,6 +2,7 @@ import './App.css';
 import Layout from './layouts/Layout';
 import SignIn from './screens/SignIn';
 import Register from './screens/Register';
+import Footer from './others/Footer.jsx'
 import MainContainer from './layouts/containers/MainContainer.jsx';
 import { Switch, Route, useHistory } from 'react-router-dom';
 import { useState, useEffect } from 'react';
@@ -44,18 +45,20 @@ function App() {
 
 	return (
 		<div className='App'>
-			<Layout currentUser={currentUser} handleLogout={handleLogout}>
+      <Layout currentUser={currentUser} handleLogout={handleLogout}>
 				<Switch>
 					<Route path='/login'>
-						<SignIn handleLogin={handleLogin} />
+            <SignIn handleLogin={handleLogin} />
+            <Footer/>
 					</Route>
 					<Route path='/register'>
-						<Register handleRegister={handleRegister} />
+            <Register handleRegister={handleRegister} />
+            <Footer/>
 					</Route>
 					<Route path='/'>
-						<MainContainer />
+            <MainContainer />
 					</Route>
-				</Switch>
+          </Switch>
 			</Layout>
 		</div>
 	);
