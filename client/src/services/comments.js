@@ -6,7 +6,7 @@ export const getAllComments = async () => {
 };
 
 
-export const postComment = async (commentData) => {
-	const resp = await api.post('/pets/:pet_id/comments', { comment: commentData });
+export const postComment = async (commentData, petId) => {
+	const resp = await api.post(`/pets/${petId}/comments`, { comment: commentData });
 	return resp.data;
 };

@@ -15,8 +15,6 @@ export default function PetDetail(props) {
   const { id} = useParams();
   const [formData, setFormData] = useState({
     content: '',
-    pet_id: id,
-    user_id: id,
   });
 
   const { content } = formData;
@@ -60,7 +58,7 @@ export default function PetDetail(props) {
       <form
         onSubmit={(e) => {
           e.preventDefault();
-          handleCreateComment(formData);
+          handleCreateComment(formData, id);
         }}
       >
         <label>

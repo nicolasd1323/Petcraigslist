@@ -31,9 +31,10 @@ function MainContainer() {
 		fetchComments();
   }, []);
 
-  const handleCreateComment = async (formData) => {
-    const commentItem = await postComment(formData);
+  const handleCreateComment = async (formData, petId) => {
+    const commentItem = await postComment(formData, petId);
     setComments((prevState) => [...prevState, commentItem]);
+
 }
 
   
