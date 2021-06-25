@@ -1,19 +1,25 @@
 import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { getOnePet } from "../../services/pets";
+import Footer from "../../others/Footer";
+
 
 export default function PetDetail(props) {
-  const { handleDelete, handleCreateComment } = props;
+  
+  
+  const { handleDelete, handleCreateComment, comments } = props;
+
 
   const [pet, setPet] = useState({});
   const [isLoaded, setLoaded] = useState(false);
-  const { id } = useParams();
+  const { id} = useParams();
   const [formData, setFormData] = useState({
     content: '',
+    pet_id: id,
+    user_id: id,
   });
 
   const { content } = formData;
-
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevState) => ({
@@ -21,6 +27,7 @@ export default function PetDetail(props) {
       [name]: value,
     }));
   };
+
 
   useEffect(() => {
     const fetchPet = async () => {
@@ -33,7 +40,6 @@ export default function PetDetail(props) {
   if (!isLoaded) {
     return <h1>Loading...</h1>;
   }
- 
 
   return (
     <div className="pet-detail">
@@ -68,6 +74,7 @@ export default function PetDetail(props) {
         </label>
         <button>Submit</button>
       </form>
+      <Footer />
     </div>
   );
 }

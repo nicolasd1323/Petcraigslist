@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { getOnePet } from "../../services/pets";
+import Footer from "../../others/Footer";
 
 
 function PetEdit(props) {
@@ -76,7 +77,8 @@ function PetEdit(props) {
 				<input type='text' name='image' value={image} onChange={handleChange} />
       </label>
 			<button>Submit</button>
-		</form>
+      </form>
+      <Footer />
     </div>
   );
 }

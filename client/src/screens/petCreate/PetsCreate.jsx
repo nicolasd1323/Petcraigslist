@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import Footer from "../../others/Footer";
+import './petCreate.css'
 
 export default function PetsCreate(props) {
   const [formData, setFormData] = useState({
@@ -18,7 +20,8 @@ export default function PetsCreate(props) {
 		}));
 	};
   return (
-		<form
+    <div className='add-pet'>
+		<form className='add-pet-form'
 			onSubmit={(e) => {
 				e.preventDefault();
 				handleCreate(formData);
@@ -42,6 +45,10 @@ export default function PetsCreate(props) {
 				<input type='number' name='age' value={age} onChange={handleChange} />
       </label>
 			<button>Submit</button>
-		</form>
+      </form>
+      <div className='footer'>
+        <Footer />
+      </div>
+      </div>
 	);
 }

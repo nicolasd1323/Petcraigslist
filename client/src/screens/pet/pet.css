@@ -23,8 +23,8 @@
 
 .editPet{
   font-family: "Montserrat";
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
   height: 85vh;
   background: linear-gradient(
       to right,
@@ -37,11 +37,11 @@
   box-shadow: 4px 2px 4px 2px rgba(255, 255, 255, 0.55);
   margin: 10px;
 }
-.formEdit{
+/* .formEdit{
   display: flex;
   justify-content: center;
   flex-flow: column
-}
+} */
 .pet-edit-image{
   width: 400px;
   height: 400px;

@@ -1,0 +1,24 @@
+.add-pet {
+  /* display: flex; */
+  /* flex-flow: column wrap; */
+  justify-self: center;
+  background: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.25),
+      rgba(255, 255, 255, 1)
+    ),    url(https://images.unsplash.com/photo-1584015465114-d9a13ff480c6?ixid=MnwxMjA3fDB8MHxzZWFy[…]ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+    margin: 10px 
+    /* align-content: space-evenly; */
+  }
+
+.add-pet-form {
+  width: 450px;
+  height: 62vh;
+  /* margin: 10px 10p 10px 10px; */
+  margin: 5px 0;
+    margin-left: 200px;
+}
