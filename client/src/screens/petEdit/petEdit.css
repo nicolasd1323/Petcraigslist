@@ -85,3 +85,10 @@
   text-decoration: none;
   color: rgb(12, 11, 11);
 }
+@media screen and (max-width: 670px) {
+  .formEdit{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+}

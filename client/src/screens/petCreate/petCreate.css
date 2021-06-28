@@ -55,3 +55,12 @@ input{
   padding: 2px;
   margin: 10px 0 10px 150px;
 }
+@media screen and (max-width: 670px) {
+  .add-pet-form {
+    width: 90%;
+  }
+  .add-button{
+    margin: 10px 0 10px 55px;
+
+  }
+}
