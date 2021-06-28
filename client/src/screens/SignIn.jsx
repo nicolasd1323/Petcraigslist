@@ -48,8 +48,8 @@ function SignIn(props) {
 				/>
 			</label>
 			<br />
-			<Link to='/register'>Register</Link>
-			<button>Submit</button>
+			<Link className='register-button' to='/register'>Register</Link>
+        <button className='register-button-2'>Submit</button>
       </form>
       </div>
 

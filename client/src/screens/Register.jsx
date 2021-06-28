@@ -20,17 +20,21 @@ export default function Register(props) {
 
   return (
     <div className='register-page'>
-    <form className='form-register'
+      			
+
+      <form className='form-register'
+        
 			onSubmit={(e) => {
 				e.preventDefault();
 				handleRegister(formData);
-			}}
-		>
-			<h3>Register</h3>
+      }}
+        
+      >
+        <h3>Register with us!!</h3>
 			<label>
 				Username:
 				<input
-					type='text'
+            type='text'
 					name='username'
 					value={username}
 					onChange={handleChange}
@@ -41,7 +45,8 @@ export default function Register(props) {
 				Email:
 				<input
 					type='text'
-					name='email'
+            name='email'
+            className='e-mail'
 					value={email}
 					onChange={handleChange}
 				/>
