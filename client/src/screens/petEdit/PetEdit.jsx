@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { getOnePet } from "../../services/pets";
 import Footer from "../../others/Footer";
+import './petEdit.css'
+
 
 
 function PetEdit(props) {
@@ -78,7 +80,6 @@ function PetEdit(props) {
       </label>
 			<button>Submit</button>
       </form>
-      <Footer />
     </div>
   );
 }

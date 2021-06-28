@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { getOnePet } from "../../services/pets";
 import Footer from "../../others/Footer";
+import './petDetail.css'
 
 
 export default function PetDetail(props) {
@@ -42,25 +43,28 @@ export default function PetDetail(props) {
   return (
     <div className="pet-detail">
       <img className="pet-detail-image" src={pet.image} alt={pet.name} />
+      <div className='detail-pet'>
       <h1>{pet.name}</h1>
-      <h6>Details: {pet.description}</h6>
-      <h6>Age:{pet.age}</h6>
-      <Link to={`/pets/${pet.id}/edit`}>
-        <button>Edit</button>
+      <h3>Details: {pet.description}</h3>
+        <h3>Age:{pet.age}</h3>
+        <div className='button-container'>
+      <Link   to={`/pets/${pet.id}/edit`}>
+        <button className="edit-button">Edit</button>
       </Link>
-      <Link to={`/pets`} onClick={() => handleDelete(pet.id)}>
+      <Link className="delete-button" to={`/pets`} onClick={() => handleDelete(pet.id)}>
         Delete
-      </Link>
-
-      <h3>Comments</h3>
-      {pet?.comments.map((comment) => <p key={comment.id}>{comment.content}</p>)}
-
+        </Link>
+        </div>
+        <h3>Comments</h3>
+        <div className='comments'>
+      {pet?.comments.map((comment) => <p className='ptag' key={comment.id}>{comment.content}</p>)}
+      </div>
       <form
         onSubmit={(e) => {
           e.preventDefault();
           handleCreateComment(formData, id);
         }}
-      >
+        >
         <label>
           Comment:
           <input
@@ -68,11 +72,12 @@ export default function PetDetail(props) {
             name="content"
             value={content}
             onChange={handleChange}
-          />
+            />
         </label>
         <button>Submit</button>
       </form>
-      <Footer />
+            </div>
+      {/* <Footer /> */}
     </div>
   );
 }
