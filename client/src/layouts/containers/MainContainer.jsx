@@ -7,12 +7,11 @@ import PetDetail from '../../screens/petDetail/PetDetail';
 import PetEdit from '../../screens/petEdit/PetEdit';
 
 import { deletePet, getAllPets, postPet, putPet  } from '../../services/pets'
-import {  getAllComments, postComment } from '../../services/comments'
+import {  getAllComments, postComment, deleteComment } from '../../services/comments'
 
 function MainContainer() {
   const [pets, setPets] = useState([]);
   const [comments, setComments]= useState([])
-
   const history = useHistory();
   
 
@@ -56,6 +55,11 @@ function MainContainer() {
 	const handleDelete = async (id) => {
 		await deletePet(id);
 		setPets((prevState) => prevState.filter((pet) => pet.id !== id));
+  };
+  
+  const handleDeleteComment = async (id) => {
+		await deleteComment(id);
+		setComments((prevState) => prevState.filter((comments) => comments.id !== id));
 	};
 
   return (
@@ -68,7 +72,7 @@ function MainContainer() {
 					<PetsCreate handleCreate={handleCreate} />
 				</Route>
 				<Route path='/pets/:id'>
-        <PetDetail pets={pets} comments={comments} handleDelete={handleDelete} handleCreateComment={handleCreateComment} />
+          <PetDetail pets={pets} comments={comments} handleDelete={handleDelete} handleCreateComment={handleCreateComment} handleDeleteComment={handleDeleteComment} />
 				</Route>
 				<Route path='/pets'>
           <Pets pets={pets} />

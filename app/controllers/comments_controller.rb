@@ -1,6 +1,6 @@
 class CommentsController < ApplicationController
-  before_action :set_comment, only: [:index, :show, :update, :destroy]
-  before_action :authorize_request, only: [:create]
+  before_action :set_comment, only: [:index, :show, :update]
+  before_action :authorize_request, only: [:create, :destroy]
   # GET /comments
   def index
     @comments = Comment.all
@@ -32,9 +32,9 @@ class CommentsController < ApplicationController
   # end
 
   # DELETE /comments/1
-  # def destroy
-  #   @comment.destroy
-  # end
+  def destroy
+    @comment.destroy
+  end
 
   private
     # Use callbacks to share common setup or constraints between actions.

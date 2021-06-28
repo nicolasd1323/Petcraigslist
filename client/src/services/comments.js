@@ -10,3 +10,8 @@ export const postComment = async (commentData, petId) => {
 	const resp = await api.post(`/pets/${petId}/comments`, { comment: commentData });
 	return resp.data;
 };
+
+export const deleteComment = async (id) => {
+  const resp = await api.delete(`/pets/:pet_id/comments/${id}`  );
+	return resp;
+};

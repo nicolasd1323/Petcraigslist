@@ -8,7 +8,7 @@ import './petDetail.css'
 export default function PetDetail(props) {
   
   
-  const { handleDelete, handleCreateComment, comments } = props;
+  const { handleDelete, handleCreateComment, handleDeleteComment } = props;
 
 
   const [pet, setPet] = useState({});
@@ -34,11 +34,12 @@ export default function PetDetail(props) {
       setPet(pet);
       setLoaded(true);
     };
-    fetchPet();
-  }, [id, pet]);
+    fetchPet(id);
+  }, [pet]);
   if (!isLoaded) {
     return <h1>Loading...</h1>;
   }
+  console.log(pet)
 
   return (
     <div className="pet-detail">
@@ -55,6 +56,7 @@ export default function PetDetail(props) {
         Delete
         </Link>
         </div>
+        {/* <button onClick={() => handleDeleteComment(comments.id)}>Delete</button> */}
         <h3>Comments</h3>
         <div className='comments'>
       {pet?.comments.map((comment) => <p className='ptag' key={comment.id}>{comment.content}</p>)}
