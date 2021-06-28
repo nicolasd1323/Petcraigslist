@@ -59,3 +59,15 @@ width: 50%;
   text-align: center;
   margin-top: 10px;
 }
+
+@media screen and (max-width: 670px) {
+  .form-register {
+    width: 90%;
+  }
+  .form-signIn {
+    width: 90%;
+  }
+  .e-mail{
+    margin-left: 10px
+  }
+}
