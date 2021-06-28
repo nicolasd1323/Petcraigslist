@@ -64,21 +64,21 @@ function PetEdit(props) {
 			<h3>Edit Pet</h3>
 			<label>
 				Name:
-				<input type='text' name='name' value={name} onChange={handleChange} />
+				<input   className="input-name" type='text' name='name' value={name} onChange={handleChange} />
         </label>
         <label>
 				description:
-				<input type='text' name='description' value={description} onChange={handleChange} />
+				<input   className="textarea-description" type='text' name='description' value={description} onChange={handleChange} />
       </label>
       <label>
 				age:
-				<input type='number' name='age' value={age} onChange={handleChange} />
+				<input className="age" type='number' name='age' value={age} onChange={handleChange} />
         </label>
         <label>
 				Image URL:
-				<input type='text' name='image' value={image} onChange={handleChange} />
+				<input className="edit-input-image-link" type='text' name='image' value={image} onChange={handleChange} />
       </label>
-			<button>Submit</button>
+			<button className="save-button">Save</button>
       </form>
     </div>
   );

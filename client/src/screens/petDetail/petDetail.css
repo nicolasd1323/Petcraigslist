@@ -34,7 +34,6 @@
 
   .button-container{
     display: flex;
-    /* -ms-flex-align: center; */
     margin-left: 60px;
     padding-left: 20px;
  }
