@@ -35,7 +35,7 @@ export default function PetDetail(props) {
       setLoaded(true);
     };
     fetchPet();
-  }, [id]);
+  }, [id, pet]);
   if (!isLoaded) {
     return <h1>Loading...</h1>;
   }
