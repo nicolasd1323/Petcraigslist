@@ -21,13 +21,13 @@ export default function PetsCreate(props) {
 	};
   return (
     <div className='add-pet'>
+      <h3>Add Pet Info</h3>
 		<form className='add-pet-form'
 			onSubmit={(e) => {
 				e.preventDefault();
 				handleCreate(formData);
 			}}
 		>
-			<h3>Create Pet</h3>
 			<label>
 				Name:
 				<input type='text' name='name' value={name} onChange={handleChange} />
@@ -46,9 +46,6 @@ export default function PetsCreate(props) {
       </label>
 			<button>Submit</button>
       </form>
-      <div className='footer'>
-        <Footer />
-      </div>
       </div>
 	);
 }

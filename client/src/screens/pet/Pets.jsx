@@ -8,29 +8,26 @@ function Pets(props) {
   const { pets } = props;
 	return (
     <div className='allPets'>
-    <div className='create'>
       <Link to='/pets/new'>
-				<button>Add Pet for adoption</button>
+				<button className='add-pet-button'>Add Pet for adoption</button>
         </Link>
-        </div>
       <br />
-			<h3>Pets for Adoption</h3>
+      <h2>Pets for Adoption</h2>
+      <div className='display-pets'>
 			{pets.map((pet) => (
 				<Fragment key={pet.id}>
           <Link to={`/pets/${pet.id}`}>
-          {pet.name}
             <img
               className="pet-images"
               src={pet.image}
               alt={pet.name}
-            
             />
           </Link>
 				</Fragment>
 			))}
-		
+		</div>
       
-      <Footer />
+      {/* <Footer /> */}
 		</div>
 	);
 }

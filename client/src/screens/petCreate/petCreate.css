@@ -1,6 +1,6 @@
 .add-pet {
-  /* display: flex; */
-  /* flex-flow: column wrap; */
+  display: flex;
+  flex-flow: column wrap;
   justify-self: center;
   background: linear-gradient(
       to top,
@@ -10,15 +10,13 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 60vh;
-    margin: 10px 
-    /* align-content: space-evenly; */
+    height: 75vh;
+    margin: 10px; 
+    background-size: cover;
+    box-shadow: 4px 2px 4px 2px;
   }
 
 .add-pet-form {
-  width: 450px;
-  height: 62vh;
-  /* margin: 10px 10p 10px 10px; */
-  margin: 5px 0;
-    margin-left: 200px;
+ display: flex;
+ align-self: center;
 }
