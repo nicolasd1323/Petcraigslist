@@ -21,30 +21,30 @@ export default function PetsCreate(props) {
 	};
   return (
     <div className='add-pet'>
-      <h3>Add Pet Info</h3>
 		<form className='add-pet-form'
 			onSubmit={(e) => {
-				e.preventDefault();
+        e.preventDefault();
 				handleCreate(formData);
 			}}
-		>
+      >
+      <h3>Pet for Adoption Info</h3>
 			<label>
 				Name:
-				<input type='text' name='name' value={name} onChange={handleChange} />
+				<input type='text' className='add-pet-name' name='name' value={name} onChange={handleChange} />
       </label>
       <label>
 				description:
-				<input type='text' name='description' value={description} onChange={handleChange} />
+				<input type='text' name='add-pet-description' value={description} onChange={handleChange} />
       </label>
       <label>
 				Image URL:
-				<input type='text' name='image' value={image} onChange={handleChange} />
+				<input type='text' name='add-pet-image' value={image} onChange={handleChange} />
       </label>
       <label>
 				age:
-				<input type='number' name='age' value={age} onChange={handleChange} />
+				<input type='number' name='add-pet-age' value={age} onChange={handleChange} />
       </label>
-			<button>Submit</button>
+			<button className='add-button'>Submit</button>
       </form>
       </div>
 	);
