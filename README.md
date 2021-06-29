@@ -55,7 +55,7 @@ _
 >  https://www.figma.com/file/noBruQmGODXEstgabO69ow/Adopt-your-pet?node-id=21%3A108
 
 
-Screen Shot 2021-06-21 at 8.50.31 PM![Screen Shot 2021-06-21 at 8 50 31 PM](https://user-images.githubusercontent.com/81534592/122845847-90d86d00-d2d2-11eb-9d22-3fd01637895e.png)
+[Screen Shot 2021-06-21 at 8 50 31 PM](https://user-images.githubusercontent.com/81534592/122845847-90d86d00-d2d2-11eb-9d22-3fd01637895e.png)
 
 Screen Shot 2021-06-21 at 8.50.41 PM![Screen Shot 2021-06-21 at 8 50 41 PM](https://user-images.githubusercontent.com/81534592/122845858-97ff7b00-d2d2-11eb-8428-193b7e5ff369.png)
 
