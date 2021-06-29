@@ -55,37 +55,38 @@ _
 >  https://www.figma.com/file/noBruQmGODXEstgabO69ow/Adopt-your-pet?node-id=21%3A108
 
 
-[Screen Shot 2021-06-21 at 8 50 31 PM](https://user-images.githubusercontent.com/81534592/122845847-90d86d00-d2d2-11eb-9d22-3fd01637895e.png)
+Screen Shot 2021-06-21 at 8.50.31 PM![Screen Shot 2021-06-21 at 8 50 31 PM](https://user-images.githubusercontent.com/81534592/122845847-90d86d00-d2d2-11eb-9d22-3fd01637895e.png)
 
+Screen Shot 2021-06-21 at 8.50.41 PM![Screen Shot 2021-06-21 at 8 50 41 PM](https://user-images.githubusercontent.com/81534592/122845858-97ff7b00-d2d2-11eb-8428-193b7e5ff369.png)
 
-[Screen Shot 2021-06-21 at 8 50 53 PM](https://user-images.githubusercontent.com/81534592/122845863-9c2b9880-d2d2-11eb-95ba-5f554794b73a.png)
+Screen Shot 2021-06-21 at 8.50.53 PM![Screen Shot 2021-06-21 at 8 50 53 PM](https://user-images.githubusercontent.com/81534592/122845863-9c2b9880-d2d2-11eb-95ba-5f554794b73a.png)
 
-[Screen Shot 2021-06-21 at 8 51 01 PM](https://user-images.githubusercontent.com/81534592/122845873-a057b600-d2d2-11eb-9972-ca86592e004e.png)
+Screen Shot 2021-06-21 at 8.51.01 PM![Screen Shot 2021-06-21 at 8 51 01 PM](https://user-images.githubusercontent.com/81534592/122845873-a057b600-d2d2-11eb-9972-ca86592e004e.png)
 
-[Screen Shot 2021-06-21 at 8 51 16 PM](https://user-images.githubusercontent.com/81534592/122845884-a77ec400-d2d2-11eb-8255-17ef46de48a6.png)
+Screen Shot 2021-06-21 at 8.51.16 PM![Screen Shot 2021-06-21 at 8 51 16 PM](https://user-images.githubusercontent.com/81534592/122845884-a77ec400-d2d2-11eb-8255-17ef46de48a6.png)
 
-[Screen Shot 2021-06-21 at 8 51 25 PM](https://user-images.githubusercontent.com/81534592/122845896-b4031c80-d2d2-11eb-9a7d-4f5e59d69e45.png)
+Screen Shot 2021-06-21 at 8.51.25 PM![Screen Shot 2021-06-21 at 8 51 25 PM](https://user-images.githubusercontent.com/81534592/122845896-b4031c80-d2d2-11eb-9a7d-4f5e59d69e45.png)
 
-[Screen Shot 2021-06-21 at 8 51 34 PM](https://user-images.githubusercontent.com/81534592/122845906-b82f3a00-d2d2-11eb-8ba4-3933ac89077c.png)
+Screen Shot 2021-06-21 at 8.51.34 PM![Screen Shot 2021-06-21 at 8 51 34 PM](https://user-images.githubusercontent.com/81534592/122845906-b82f3a00-d2d2-11eb-8ba4-3933ac89077c.png)
 
-[Screen Shot 2021-06-21 at 8 51 25 PM](https://user-images.githubusercontent.com/81534592/122845889-aa79b480-d2d2-11eb-9ae7-514d66a4bd81.png)
+Screen Shot 2021-06-21 at 8.51.25 PM![Screen Shot 2021-06-21 at 8 51 25 PM](https://user-images.githubusercontent.com/81534592/122845889-aa79b480-d2d2-11eb-9ae7-514d66a4bd81.png)
 
-[Screen Shot 2021-06-21 at 8 51 45 PM](https://user-images.githubusercontent.com/81534592/122845913-bc5b5780-d2d2-11eb-8b1b-365c0e95319c.png)
+Screen Shot 2021-06-21 at 8.51.45 PM![Screen Shot 2021-06-21 at 8 51 45 PM](https://user-images.githubusercontent.com/81534592/122845913-bc5b5780-d2d2-11eb-8b1b-365c0e95319c.png)
 
-[Screen Shot 2021-06-21 at 8 51 54 PM](https://user-images.githubusercontent.com/81534592/122845918-bf564800-d2d2-11eb-9e58-769d94d55e14.png)
+Screen Shot 2021-06-21 at 8.51.54 PM![Screen Shot 2021-06-21 at 8 51 54 PM](https://user-images.githubusercontent.com/81534592/122845918-bf564800-d2d2-11eb-9e58-769d94d55e14.png)
 <br>
 
 >  Wireframes section to display Media.
 
-[Screen Shot 2021-06-21 at 8 54 30 PM](https://user-images.githubusercontent.com/81534592/122846057-0fcda580-d2d3-11eb-9c91-5f23f15a87f7.png)
+Screen Shot 2021-06-21 at 8.54.30 PM![Screen Shot 2021-06-21 at 8 54 30 PM](https://user-images.githubusercontent.com/81534592/122846057-0fcda580-d2d3-11eb-9c91-5f23f15a87f7.png)
 
-[Screen Shot 2021-06-21 at 8 54 46 PM](https://user-images.githubusercontent.com/81534592/122846065-14925980-d2d3-11eb-9a9f-8a87cae2b360.png)
+Screen Shot 2021-06-21 at 8.54.46 PM![Screen Shot 2021-06-21 at 8 54 46 PM](https://user-images.githubusercontent.com/81534592/122846065-14925980-d2d3-11eb-9a9f-8a87cae2b360.png)
 
-[Screen Shot 2021-06-21 at 8 55 04 PM](https://user-images.githubusercontent.com/81534592/122846072-19570d80-d2d3-11eb-8d5d-6cd5a08ac68a.png)
+Screen Shot 2021-06-21 at 8.55.04 PM![Screen Shot 2021-06-21 at 8 55 04 PM](https://user-images.githubusercontent.com/81534592/122846072-19570d80-d2d3-11eb-8d5d-6cd5a08ac68a.png)
 
-[Screen Shot 2021-06-21 at 8 55 27 PM](https://user-images.githubusercontent.com/81534592/122846083-1e1bc180-d2d3-11eb-8843-84f81af85500.png)
+Screen Shot 2021-06-21 at 8.55.27 PM![Screen Shot 2021-06-21 at 8 55 27 PM](https://user-images.githubusercontent.com/81534592/122846083-1e1bc180-d2d3-11eb-8843-84f81af85500.png)
 
-[Screen Shot 2021-06-21 at 8 55 34 PM](https://user-images.githubusercontent.com/81534592/122846093-2116b200-d2d3-11eb-9995-961ef113230b.png)
+Screen Shot 2021-06-21 at 8.55.34 PM![Screen Shot 2021-06-21 at 8 55 34 PM](https://user-images.githubusercontent.com/81534592/122846093-2116b200-d2d3-11eb-9995-961ef113230b.png)
 
 
 
