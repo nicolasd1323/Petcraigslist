@@ -1,41 +1,39 @@
-.register-page{
+.register-page {
   display: flex;
   justify-content: center;
   height: 67vh;
   background: linear-gradient(
       to right,
-      rgba(255, 255, 255, 0.50),
-      rgba(255, 255, 255, 0.50)
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
     ),
-  url('https://images.unsplash.com/photo-1601758066503-27afdf1b9316?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDF8fGZhbWlseSUyMGFuZCUyMHBldHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+    url("https://images.unsplash.com/photo-1601758066503-27afdf1b9316?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDF8fGZhbWlseSUyMGFuZCUyMHBldHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
   box-shadow: 4px 2px 4px 2px;
   margin: 10px;
-
-
 }
-  .form-register {
-    align-self:center;
-    border: 2px solid rgba(46, 241, 14, 0.32);
-    padding: 1em;
-    width: 50%;
-        border-radius: 6px;
-        transition: all 2s ease;
-  }
-  
-  .e-mail{
-    margin-left: 42px;
-  }
-
-.form-signIn{
-align-self:center;
-border: 2px solid rgba(46, 241, 14, 0.32);
-padding: 1em;
-width: 50%;
-    border-radius: 6px;
-    transition: all 2s ease;
+.form-register {
+  align-self: center;
+  border: 2px solid rgba(46, 241, 14, 0.32);
+  padding: 1em;
+  width: 50%;
+  border-radius: 6px;
+  transition: all 2s ease;
 }
 
-.register-button{
+.e-mail {
+  margin-left: 42px;
+}
+
+.form-signIn {
+  align-self: center;
+  border: 2px solid rgba(46, 241, 14, 0.32);
+  padding: 1em;
+  width: 50%;
+  border-radius: 6px;
+  transition: all 2s ease;
+}
+
+.register-button {
   font-size: 20px;
   height: 20px;
   /* width: 220px; */
@@ -47,10 +45,9 @@ width: 50%;
   text-align: center;
   margin-top: 10px auto auto 100px;
 }
-.register-button-2{
+.register-button-2 {
   font-size: 20px;
   height: 20px;
-  /* width: 220px; */
   background-color: rgba(46, 241, 14, 0.32);
   color: rgb(55, 53, 53);
   border: none;
@@ -67,7 +64,7 @@ width: 50%;
   .form-signIn {
     width: 90%;
   }
-  .e-mail{
-    margin-left: 10px
+  .e-mail {
+    margin-left: 10px;
   }
 }

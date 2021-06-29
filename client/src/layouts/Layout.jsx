@@ -25,7 +25,7 @@ export default function Layout(props) {
           }
       </header>
       <footer>
-         
+    
       </footer>
 			{children}
     </div>

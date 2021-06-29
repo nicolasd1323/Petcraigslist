@@ -12,6 +12,6 @@ export const postComment = async (commentData, petId) => {
 };
 
 export const deleteComment = async (id) => {
-  const resp = await api.delete(`/pets/:pet_id/comments/${id}`  );
+  const resp = await api.delete(`/comments/${id}`);
 	return resp;
 };

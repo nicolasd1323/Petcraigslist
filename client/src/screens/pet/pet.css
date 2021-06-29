@@ -1,21 +1,21 @@
-.allPets{
+.allPets {
   background: linear-gradient(
-    to top,
-    rgba(255, 255, 255, 0.25),
-    rgba(255, 255, 255, 1)
-  ),    url(https://images.unsplash.com/photo-1494187570835-b188e7f0f26e?ixid=MnwxMjA3fDB8MHxzZWFy[…]ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+      to top,
+      rgba(255, 255, 255, 0.25),
+      rgba(255, 255, 255, 1)
+    ),
+    url(https://images.unsplash.com/photo-1494187570835-b188e7f0f26e?ixid=MnwxMjA3fDB8MHxzZWFy[…]ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   margin: 10px;
   box-shadow: 4px 2px 4px 2px;
-
 }
-.display-pets{
+.display-pets {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
-.pet-images{
+.pet-images {
   margin: 10px;
   width: 200px;
   height: 200px;
@@ -26,7 +26,6 @@
   background-size: cover;
   box-shadow: 4px 0 4px 2px;
 }
-
 
 .add-pet-button {
   font-size: 22px;
@@ -42,9 +41,8 @@
   margin: 10px 0 10px;
 }
 @media screen and (max-width: 670px) {
-  .display-pets{
+  .display-pets {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
-
 }
