@@ -42,7 +42,7 @@ export default function PetsCreate(props) {
           description:
           <input
             type="text"
-            name="add-pet-description"
+            name="description"
             value={description}
             onChange={handleChange}
           />
@@ -51,7 +51,7 @@ export default function PetsCreate(props) {
           Image URL:
           <input
             type="text"
-            name="add-pet-image"
+            name="image"
             value={image}
             onChange={handleChange}
           />
@@ -60,7 +60,7 @@ export default function PetsCreate(props) {
           age:
           <input
             type="number"
-            name="add-pet-age"
+            name="age"
             value={age}
             onChange={handleChange}
           />
