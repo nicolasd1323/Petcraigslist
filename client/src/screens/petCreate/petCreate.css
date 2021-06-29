@@ -1,24 +1,60 @@
 .add-pet {
-  /* display: flex; */
-  /* flex-flow: column wrap; */
-  justify-self: center;
+  display: flex;
+  justify-content: center;
   background: linear-gradient(
       to top,
       rgba(255, 255, 255, 0.25),
       rgba(255, 255, 255, 1)
-    ),    url(https://images.unsplash.com/photo-1584015465114-d9a13ff480c6?ixid=MnwxMjA3fDB8MHxzZWFy[…]ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 60vh;
-    margin: 10px 
-    /* align-content: space-evenly; */
-  }
+    ),
+    url(https://images.unsplash.com/photo-1584015465114-d9a13ff480c6?ixid=MnwxMjA3fDB8MHxzZWFy[…]ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 85vh;
+  margin: 10px;
+  align-content: space-evenly;
+  box-shadow: 4px 2px 4px 2px;
+}
 
 .add-pet-form {
+  display: flex;
+  justify-content: center;
+  justify-self: flex-start;
+  flex-flow: column;
+  border-style: ridge;
+  border-color: rgb(222, 218, 218);
   width: 450px;
-  height: 62vh;
-  /* margin: 10px 10p 10px 10px; */
-  margin: 5px 0;
-    margin-left: 200px;
+  height: 300px;
+  margin: 200px;
+}
+
+label {
+  margin: 5px;
+  font-size: 25px;
+}
+
+input {
+  height: 25px;
+  width: 280px;
+}
+
+.add-button {
+  font-size: 22px;
+  height: 40px;
+  width: 200px;
+  margin: 40px 0px 20px 0px;
+  background-color: rgba(46, 241, 14, 0.32);
+  color: white;
+  border: none;
+  box-shadow: 2px 2px 10px 2px #cecece;
+  cursor: pointer;
+  padding: 2px;
+  margin: 10px 0 10px 150px;
+}
+@media screen and (max-width: 670px) {
+  .add-pet-form {
+    width: 90%;
+  }
+  .add-button {
+    margin: 10px 0 10px 55px;
+  }
 }
