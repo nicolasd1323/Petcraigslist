@@ -57,7 +57,7 @@ _
 
 [Screen Shot 2021-06-21 at 8 50 31 PM](https://user-images.githubusercontent.com/81534592/122845847-90d86d00-d2d2-11eb-9d22-3fd01637895e.png)
 
-Screen Shot 2021-06-21 at 8.50.41 PM![Screen Shot 2021-06-21 at 8 50 41 PM](https://user-images.githubusercontent.com/81534592/122845858-97ff7b00-d2d2-11eb-8428-193b7e5ff369.png)
+(https://user-images.githubusercontent.com/81534592/122845858-97ff7b00-d2d2-11eb-8428-193b7e5ff369.png)
 
 Screen Shot 2021-06-21 at 8.50.53 PM![Screen Shot 2021-06-21 at 8 50 53 PM](https://user-images.githubusercontent.com/81534592/122845863-9c2b9880-d2d2-11eb-95ba-5f554794b73a.png)
 
